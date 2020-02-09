@@ -1,0 +1,18 @@
+.links {
+  list-style-type: none;
+  position: relative;
+  top: 0;
+  left: 30%;
+}
+
+.logo {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 9%;
+}
+
+li {
+  display: inline;
+  margin-left: 25px;
+}
