@@ -1,4 +1,32 @@
 .App {
   text-align: center;
   color: white;
+  margin: 0 auto;
+}
+
+.search {
+  font-size: 65px;
+}
+
+.search-component {
+  margin-top: 380px;
+  margin-right: 50px;
+}
+
+.search-input {
+  background: #1b1b1b;
+  color: white;
+  font-size: 55px;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-left: 20px;
+  width: 460px;
+  position: relative;
+  bottom: 10px;
+}
+
+.icon {
+  color: #31f5af;
+  margin-bottom: 6px;
+  margin-right: 6px;
 }

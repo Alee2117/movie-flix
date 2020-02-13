@@ -7,10 +7,20 @@ const Navbar = () => {
     <nav>
       <img className="logo" src={logo} />
       <ul className="links">
-        <li>Home</li>
-        <li>About</li>
-        <li>Subscriptions</li>
-        <li>Contact</li>
+        <li>
+          <a href="#" className="active">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Subscriptions</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
       </ul>
     </nav>
   );

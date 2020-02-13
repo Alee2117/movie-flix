@@ -1,12 +1,18 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Hello World</h1>
+      <div className="search-component">
+        <FontAwesomeIcon className="icon" size="3x" icon={faSearch} />
+        <span className="search">Search</span>
+        <input className="search-input" type="text" />
+      </div>
     </div>
   );
 }
