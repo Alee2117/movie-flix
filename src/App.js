@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="search-component">
-        <FontAwesomeIcon className="icon" size="3x" icon={faSearch} />
+        <a href="#">
+          <FontAwesomeIcon className="icon" size="3x" icon={faSearch} />
+        </a>
         <span className="search">Search</span>
         <input className="search-input" type="text" />
       </div>
