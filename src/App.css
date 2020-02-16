@@ -23,10 +23,15 @@
   width: 460px;
   position: relative;
   bottom: 10px;
+  outline: none;
 }
 
 .icon {
   color: #31f5af;
   margin-bottom: 6px;
   margin-right: 6px;
+}
+
+form {
+  display: inline;
 }
