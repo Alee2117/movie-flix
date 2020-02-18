@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import Movie from "./Movie";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Axios from "axios";
 
 const Search = () => {
@@ -35,16 +37,21 @@ const Search = () => {
   };
 
   return (
-    <div className="search-component">
-      <a href="#">
-        <FontAwesomeIcon className="icon" size="3x" icon={faSearch} />
-      </a>
-      <form onSubmit={handleSubmit}>
-        <span className="search">Search</span>
-        <input onChange={handleInput} className="search-input" type="text" />
-      </form>
-      <p>{movies}</p>
-    </div>
+    <Router>
+      <div className="search-component">
+        <a href="#">
+          <FontAwesomeIcon className="icon" size="3x" icon={faSearch} />
+        </a>
+        <form onSubmit={handleSubmit}>
+          <span className="search">Search</span>
+          <input onChange={handleInput} className="search-input" type="text" />
+        </form>
+        <p>{movies}</p>
+      </div>
+      <Route path="/movie" component={Movie}>
+        <Movie />/
+      </Route>
+    </Router>
   );
 };
 
