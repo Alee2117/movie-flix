@@ -24,7 +24,7 @@ const Search = () => {
       getMovies(search);
       setIsLoaded(false);
     }
-  });
+  }, [isLoaded]);
 
   const getMovies = search => {
     Axios.get(`http://www.omdbapi.com/?t=${search}&apikey=183ac7ca`).then(
