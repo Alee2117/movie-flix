@@ -17,16 +17,17 @@ li {
   margin-left: 50px;
 }
 
-li a {
+li {
   color: white;
   text-decoration: none;
   font-size: 25px;
 }
 
-li a:hover {
+li:hover {
   color: rgb(102, 102, 102);
+  cursor: pointer;
 }
 
-.active {
+li.active {
   color: #31f5af;
 }

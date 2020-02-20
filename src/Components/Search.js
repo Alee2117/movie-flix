@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import MovieForm from "./MovieForm";
+
 import Movie from "./Movie";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Axios from "axios";
 
 const Search = () => {
@@ -23,7 +23,7 @@ const Search = () => {
     if (isLoaded) {
       getMovies(search);
       setIsLoaded(false);
-    }
+    } // eslint-disable-next-line
   }, [isLoaded]);
 
   const getMovies = search => {
@@ -42,7 +42,8 @@ const Search = () => {
           writer: res.data.Writer,
           actors: res.data.Actors,
           plot: res.data.Plot,
-          awards: res.data.Awards
+          awards: res.data.Awards,
+          id: res.data.imdbID
         };
 
         setMovie([...movies, movieObject]);
@@ -51,30 +52,10 @@ const Search = () => {
   };
 
   return (
-    <Router>
-      <div className="search-component">
-        <Link to="/movie">
-          <a href="#">
-            <FontAwesomeIcon className="icon" size="3x" icon={faSearch} />
-          </a>
-        </Link>
-        <span className="search">Search</span>
-        <Link to="/movie">
-          <form onSubmit={handleSubmit}>
-            <input
-              onChange={handleInput}
-              className="search-input"
-              type="text"
-            />
-          </form>
-        </Link>
-      </div>
-      <Switch>
-        <Route path="/movie" exact component={Movie}>
-          <Movie movies={movies} />/
-        </Route>
-      </Switch>
-    </Router>
+    <div>
+      <MovieForm handleSubmit={handleSubmit} handleInput={handleInput} />
+      <Movie movies={movies} />
+    </div>
   );
 };
 
