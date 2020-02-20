@@ -1,0 +1,35 @@
+.search-bar {
+}
+
+.search-component {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.search {
+  font-size: 35px;
+}
+
+.search-input {
+  background: #1b1b1b;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-left: 10px;
+  width: 250px;
+  position: relative;
+  bottom: 4px;
+  outline: none;
+}
+
+.icon {
+  color: #31f5af;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+form {
+  display: inline;
+}

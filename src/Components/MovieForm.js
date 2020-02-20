@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 const MovieForm = props => {
   return (
     <div className="search-component">
-      <FontAwesomeIcon className="icon" size="3x" icon={faSearch} />
+      <FontAwesomeIcon className="icon" size="2x" icon={faSearch} />
       <span className="search">Search</span>
       <form onSubmit={props.handleSubmit}>
         <input

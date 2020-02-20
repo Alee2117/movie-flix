@@ -1,33 +1,6 @@
-.links {
-  list-style-type: none;
-  position: relative;
-  top: 0;
-  left: 34%;
-}
-
 .logo {
   display: inline;
   position: absolute;
   top: 0;
   left: 0.3%;
-}
-
-li {
-  display: inline;
-  margin-left: 50px;
-}
-
-li {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-li:hover {
-  color: rgb(102, 102, 102);
-  cursor: pointer;
-}
-
-li.active {
-  color: #31f5af;
 }

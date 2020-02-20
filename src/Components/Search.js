@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MovieForm from "./MovieForm";
+import "./Search.css";
 
 import Movie from "./Movie";
 // import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
@@ -53,7 +54,11 @@ const Search = () => {
 
   return (
     <div>
-      <MovieForm handleSubmit={handleSubmit} handleInput={handleInput} />
+      <MovieForm
+        className="search-bar"
+        handleSubmit={handleSubmit}
+        handleInput={handleInput}
+      />
       <Movie movies={movies} />
     </div>
   );
