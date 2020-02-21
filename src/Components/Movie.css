@@ -1,13 +1,9 @@
-.poster {
-  position: absolute;
-  top: 100px;
-  left: 10px;
+ul {
+  list-style-type: none;
 }
 
-.title-runtime {
-  position: absolute;
-  left: 45px;
-  bottom: 400px;
+.poster {
+  margin-bottom: 10px;
 }
 
 .title {
@@ -17,6 +13,46 @@
 
 .plot {
   position: absolute;
+  word-spacing: 10px;
+  font-size: 25px;
   right: 100px;
-  width: 700px;
+  top: 100px;
+  width: 800px;
+  text-align: right;
+  letter-spacing: 4px;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+.poster-title {
+  position: absolute;
+  top: 150px;
+  left: 15px;
+  z-index: 2;
+}
+
+.rating-genre {
+  position: absolute;
+  top: 150px;
+  left: 420px;
+  text-align: left;
+  z-index: 0;
+}
+
+.rating {
+  position: relative;
+}
+
+.movie-info {
+  text-align: left;
+  position: absolute;
+  top: 270px;
+  left: 420px;
+  z-index: 25;
+  width: 30%;
+}
+
+.released {
+  display: block;
+  margin-top: 170px;
 }
