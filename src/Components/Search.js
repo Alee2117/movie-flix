@@ -34,7 +34,6 @@ const Search = () => {
         let movieObject = {
           title: res.data.Title,
           poster: res.data.Poster,
-          year: res.data.Year,
           rated: res.data.Rated,
           released: res.data.Released,
           runtime: res.data.Runtime,

@@ -1,0 +1,10 @@
+.poster {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+
+.title {
+  display: inline;
+  margin-right: 10px;
+}
