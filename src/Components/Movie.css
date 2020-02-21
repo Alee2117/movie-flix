@@ -4,7 +4,19 @@
   left: 10px;
 }
 
+.title-runtime {
+  position: absolute;
+  left: 45px;
+  bottom: 400px;
+}
+
 .title {
   display: inline;
   margin-right: 10px;
+}
+
+.plot {
+  position: absolute;
+  right: 100px;
+  width: 700px;
 }
