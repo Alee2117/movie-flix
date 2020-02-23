@@ -47,7 +47,7 @@ const Search = () => {
         id: res.data.imdbID
       };
 
-      setMovie([...movies, movieObject]);
+      setMovie([movieObject]);
     });
   };
 
