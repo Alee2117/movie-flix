@@ -2,6 +2,10 @@ ul {
   list-style-type: none;
 }
 
+.icon {
+  margin-bottom: 10px;
+}
+
 .poster {
   margin-bottom: 10px;
 }
@@ -55,4 +59,82 @@ ul {
 .released {
   display: block;
   margin-top: 170px;
+}
+
+@media (max-width: 500px) {
+  .poster {
+    margin: 0 auto;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 200px;
+    height: 300px;
+  }
+
+  .plot {
+    font-size: 13px;
+    word-spacing: 0;
+    letter-spacing: 0;
+    left: 10%;
+    top: 40px;
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    display: block;
+  }
+
+  .title {
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    left: -35px;
+  }
+  .runtime {
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    left: -35px;
+  }
+
+  .rating-genre {
+    font-size: 8px;
+  }
+
+  .movie-info {
+    font-size: 12px;
+    width: 130px;
+    height: 250px;
+    left: 220px;
+    top: 386px;
+  }
+
+  .rating-genre {
+    left: 30px;
+    font-size: 7px;
+    top: 706px;
+  }
+
+  .rating,
+  .genre {
+    display: inline;
+  }
+
+  .rating {
+    margin-right: 20px;
+  }
+
+  .icon {
+    margin-bottom: 2px;
+  }
+
+  .released {
+    margin: 0;
+  }
+
+  .writers,
+  .actors,
+  .awards {
+    width: 200px;
+  }
 }

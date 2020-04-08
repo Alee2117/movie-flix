@@ -29,7 +29,7 @@ const Search = () => {
 
   const getMovies = search => {
     Axios.get(
-      `http://www.omdbapi.com/?t=${search}&plot=full&apikey=183ac7ca`
+      `https://www.omdbapi.com/?t=${search}&plot=full&apikey=183ac7ca`
     ).then(res => {
       console.log(res.data);
       let movieObject = {

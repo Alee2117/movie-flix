@@ -19,7 +19,7 @@ const Movie = ({ movies }) => {
             <h1 className="title" key={movie.title}>
               {movie.title}
             </h1>
-            <small>{movie.runtime}</small>
+            <small className="runtime">{movie.runtime}</small>
           </li>
         </ul>
       </div>
@@ -27,14 +27,14 @@ const Movie = ({ movies }) => {
         <h1 className="rating" key={movie.id}>
           {movie.rated}
         </h1>
-        <h1>{movie.genre}</h1>
+        <h1 className="genre">{movie.genre}</h1>
       </div>
       <h3 className="plot">{movie.plot}</h3>
       <div className="movie-info">
         <p>Director: {movie.director}</p>
-        <p>Writer(s): {movie.writer}</p>
-        <p>Leading Actors: {movie.actors}</p>
-        <p>{movie.awards}</p>
+        <p className="writers">Writer(s): {movie.writer}</p>
+        <p className="actors">Leading Actors: {movie.actors}</p>
+        <p className="awards">{movie.awards}</p>
         <small className="released">Released: {movie.released}</small>
       </div>
     </div>

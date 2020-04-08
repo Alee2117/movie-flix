@@ -4,3 +4,9 @@
   top: 0;
   left: 0.3%;
 }
+
+@media (max-width: 500px) {
+  .logo {
+    width: 130px;
+  }
+}

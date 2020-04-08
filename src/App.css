@@ -4,3 +4,6 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
+@media (min-width: 480px) {
+}
