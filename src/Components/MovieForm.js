@@ -12,6 +12,7 @@ const MovieForm = props => {
           onChange={props.handleInput}
           className="search-input"
           type="text"
+          placeholder="Movie Title Here..."
         />
       </form>
     </div>
